@@ -14,7 +14,6 @@
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  width: 30%;
   border: 1px solid rgb(175, 228, 245);
 }
 
@@ -42,5 +41,62 @@
 }
 
 .reply-button {
+  cursor: pointer;
+}
+
+.reply-section {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+}
+
+.reply-form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  align-items: end;
+}
+
+.reply-textarea {
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 1rem;
+  background: linear-gradient(
+    to left,
+    rgb(240, 185, 185),
+    rgb(231, 213, 178),
+    rgb(248, 248, 165),
+    rgb(176, 176, 226)
+  );
+}
+
+.reply-textarea:focus {
+  outline: none;
+}
+
+.reply-button-section {
+  width: 20%;
+  display: flex;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background: linear-gradient(
+    to left,
+    rgb(250, 199, 250),
+    rgb(247, 187, 247),
+    rgb(240, 185, 185),
+    rgb(245, 218, 218)
+  );
+}
+
+.reply-span-section {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  padding: 0.7rem;
+  background-color: aqua;
+  color: rgb(9, 68, 102);
+  font-size: 1.4rem;
   cursor: pointer;
 }
