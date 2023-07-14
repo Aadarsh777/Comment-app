@@ -1,0 +1,46 @@
+.comments-section {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to left,
+    rgb(241, 220, 220),
+    rgb(121, 121, 114),
+    rgb(235, 111, 111)
+  );
+}
+
+.comments-section-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 30%;
+  border: 1px solid rgb(175, 228, 245);
+}
+
+.comments-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: rgb(240, 233, 233);
+}
+
+.comments-p {
+  display: flex;
+  color: beige;
+}
+
+.comments-vote {
+  display: flex;
+  justify-content: space-around;
+}
+
+.comments-upVote,
+.comments-downVote {
+  cursor: pointer;
+}
+
+.reply-button {
+  cursor: pointer;
+}

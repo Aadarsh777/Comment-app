@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import "./App.css";
+import CommentBox from "./components/CommentBox";
+import Comments from "./components/Comments";
+
+const allComments = [
+  {
+    name: "Aadarsh",
+    comment: "Very Nice!",
+    upVote: 1,
+    downVote: 0,
+  },
+  {
+    name: "Sonu",
+    comment: "Very Bad!",
+    upVote: 2,
+    downVote: 0,
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <CommentBox allComments={allComments} />
+      <Comments allComments={allComments} />
+    </Fragment>
   );
 }
 
